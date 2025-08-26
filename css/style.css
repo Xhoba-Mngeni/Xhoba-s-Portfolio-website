@@ -180,27 +180,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: row; 
-        justify-content: center; 
-        flex-wrap: wrap; 
-        gap: 0.5rem; 
-    }
-
     .nav-links {
-        flex-direction: row;  
+        display: flex;
+        flex-wrap: wrap;   /* allow wrapping */
         justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;  
+        gap: 0.5rem;
     }
 
     .nav-links a {
-        font-size: 0.9rem; 
-        padding: 0.5rem;  
-    }
-
-    .about-content {
-        flex-direction: column;
-        text-align: center;
+        font-size: 0.8rem; /* smaller text */
+        padding: 0.4rem 0.6rem; /* tighter spacing */
     }
 }
