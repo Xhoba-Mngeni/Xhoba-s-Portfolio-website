@@ -1,139 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio, skills, projects, and experience.">
-    <meta name="keywords" content="portfolio, resume, developer, skills, projects">
-    <meta name="author" content="Xhoba Bukho Mngeni">
-    <title>Xhoba Bukho Mngeni - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xhoba Mngeni - Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">Xhoba Bukho Mngeni</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#Certificates">Certificates</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section id="about" data-aos="fade-up">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="assets/Profile.png" alt="Profile Picture" class="profile-pic">
-                <p>Motivated and eager to learn, I am a dedicated individual looking to begin my professional journey.
-                     Although I do not have formal work experience or studies, I possess a strong work ethic, a willingness to learn quickly,
-                     and a passion for personal growth. I am adaptable, reliable, and thrive in team environments. I am confident in my ability to develop new skills,
-                      take initiative, and contribute positively to any workplace. With a keen interest in building a successful career,
-                      I am excited to bring my enthusiasm and dedication to a dynamic role where I can make a meaningful contribution.</p>
+  <main class="main-container">
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="assets/Profile.png" alt="Xhoba Mngeni" width="80">
+        </figure>
+
+        <button class="theme-btn" data-theme-btn title="Toggle Light/Dark Mode">
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <ion-icon name="sunny-outline" class="sun"></ion-icon>
+        </button>
+
+        <div class="info-content">
+          <h1 class="name" title="Xhoba Bukho Mngeni">Xhoba Mngeni</h1>
+          <p class="title">Junior Backend Developer | Python, FastAPI & SQL | IT Support Grad with Full Stack & AI Certifications</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:Xhobamax@gmail.com" class="contact-link">Xhobamax@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+27825384662" class="contact-link">+27 82 538 4662</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bloemfontein, South Africa</address>
+            </div>
+          </li>
+          
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/xhoba-mngeni" class="social-link" target="_blank" title="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Xhoba-Mngeni" class="social-link" target="_blank" title="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/xhoba_mngeni/" class="social-link" target="_blank" title="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://web.facebook.com/skii.xse/?_rdc=1&_rdr#" class="social-link" target="_blank" title="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/Xhoba_Mngeni" class="social-link" target="_blank" title="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+<div class="download-cv-box" style="text-align: center; margin-top: 20px;">
+  <a href="assets/Xhoba's CV .pdf" download class="form-btn" style="display: inline-flex; justify-content: center; align-items: center; gap: 10px; width: 100%; padding: 10px; border-radius: 12px; color: var(--orange-yellow-crayola); background: var(--border-gradient-onyx);">
+    <ion-icon name="cloud-download-outline"></ion-icon>
+    <span>Download CV</span>
+  </a>
+</div>
+
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><button class="navbar-link active" data-nav-link>About</button></li>
+          <li><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li><button class="navbar-link" data-nav-link>Portfolio</button></li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a dedicated IT professional merging support workflows with modern backend automation.
+            My background includes a Higher Certificate in Support Services and practical experience in full-stack software development.
+          </p>
+          <p>
+            I am proficient in Python, SQL, and REST API development, with a portfolio of live, cloud-deployed applications.
+            Currently, I am enrolling in a Bachelor of IT in Business Systems to further deepen my technical expertise.
+          </p>
         </section>
 
-        <section id="education" data-aos="fade-up">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="date"></span>
-                    <h3>Higher Certificate in IT Support Services</h3>
-                    <p>Rosebank College</p>
-                    <p>February 2025 (Expected completion: November 2025)</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="date"></span>
-                    <h3>National Senior Certificate</h3>
-                    <p>Brebner High School</p>
-                    <p>Graduated: 2022</p>
-                </div>
-            </div>
+        <section class="service">
+          <h3 class="h3 service-title">What I Do</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  Python, FastAPI, SQL (PostgreSQL/SQLite), REST APIs.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Web Design</h4>
+                <p class="service-item-text">
+                  HTML5, CSS3, JavaScript, Responsive Design.
+                </p>
+              </div>
+            </li>
+            
+             <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="construct-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">IT Support & Ops</h4>
+                <p class="service-item-text">
+                  Help Desk operations, client systems configuration, 
+                  computer hardware architecture, network architecture fundamentals, 
+                  and cybersecurity principles.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bachelor of Information Technology in Business Systems</h4>
+              <span>Rosebank College (Feb 2026 - Nov 2028)</span>
+              <p class="timeline-text">Focusing on business systems and deeper technical expertise.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Higher Certificate in Information Technology Support Services</h4>
+              <span>Rosebank College (Completed 2025)</span>
+              <p class="timeline-text">Graduated with a focus on support services.</p>
+            </li>
+          </ol>
         </section>
 
-        <section id="Certificates" data-aos="fade-up">
-            <h2>Certificates</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Full Stack Development</h3>
-                    <p>FNB app academy | IT Varsity</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate </h3>
-                    <p>Oracle University</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Responsive Web Design</h3>
-                    <p>FreeCodeCamp</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Introduction to SQL</h3>
-                    <p>Simplilearn</p>
-                </div>
-            </div>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="ribbon-outline"></ion-icon></div>
+            <h3 class="h3">Certifications</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h4>
+              <span>Oracle University</span>
+              <p class="timeline-text">Specialized in AI foundations.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Full Stack Development Certificate</h4>
+              <span>FNB App Academy | IT Varsity</span>
+              <p class="timeline-text">Comprehensive training in full stack development.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Responsive Web Design</h4>
+              <span>FreeCodeCamp</span>
+              <p class="timeline-text">Comprehensive training in responsive web design.</p>
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Introduction to SQL</h4>
+              <span>Simplilearn</span>
+              <p class="timeline-text">Comprehensive training in SQL.</p>
+            </li>
+          </ol>
         </section>
+      </article>
 
-        <section id="skills" data-aos="fade-up">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">HTML5</div>
-                <div class="skill-item">CSS3</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">Node.js</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">SQL</div>
-            </div>
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://bloem-emergency-cloud-1.onrender.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/emergency-login.png" alt="Medical Summary System" loading="lazy">
+                </figure>
+                <h3 class="project-title">AI Emergency Medical System</h3>
+                <p class="project-category">Python FastAPI, Crypto, Secure Data</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://smart-helpdesk-production.up.railway.app/login" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/Smarthelp-Desk-login.png" alt="Smart Help Desk" loading="lazy">
+                </figure>
+                <h3 class="project-title">Smart Help Desk</h3>
+                <p class="project-category">Support Workflow Automation</p>
+              </a>
+            </li>
+
+          </ul>
         </section>
+      </article>
 
-        <section id="projects" data-aos="fade-up">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <article class="project-item">
-                    <h3>IT Themed Quiz</h3>
-                    <p>
-                     A lightweight, browser-based multiple-choice quiz designed for users who want to take a IT/tech-themed quiz,
-                     receive immediate feedback, and see their score.</p>
-                    <p><strong>Tech:</strong> HTML, CSS, Javascript, JSON </p>
-                    <a href="https://xhoba-mngeni.github.io/Network-IT-quiz/" target="_blank">Visit Site</a>
-                </article>
-                <article class="project-item">
-                    <h3>Turtle Racing Game</h3>
-                    <p>Built a Python turtle racing game with countdowns, finish line detection, and optional betting,
-                         showcasing skills in user interaction and game logic.</p>
-                    <p><strong>Tech:</strong>Python </p>
-                    <a href="https://github.com/Xhoba-Mngeni/TurtleRacingGame" target="_blank">View on GitHub</a>
-                </article>
-            </div>
-        </section>
+    </div>
+  </main>
 
-        <section id="contact" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Reach out to discuss opportunities or collaborations!</p>
-            <a href="mailto:Xhobamax@gmail.com" class="btn">Contact Me</a>
-            <a href="" class="btn" download>Download CV</a>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/xhoba-mngeni/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/xhoba-mngeni" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </section>
-    </main>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <footer>
-        <p>&copy; 2025 Xhoba Bukho Mngeni. All rights reserved.</p>
-    </footer>
+  <script src="js/main.js"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>

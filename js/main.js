@@ -1,24 +1,59 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Theme Toggle button
-    const themeToggle = document.querySelector('.theme-toggle');
-    themeToggle.addEventListener('click', () => {
-        document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
-        themeToggle.innerHTML = document.body.dataset.theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-    });
+'use strict';
 
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+// Element toggle function
+const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-    // Initialize Animation on scroll feature
-    AOS.init({
-        duration: 800,
-        once: true
-    });
+// Sidebar variables
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+// Sidebar toggle functionality for mobile
+if(sidebarBtn) {
+  sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+}
+
+// Page navigation variables
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+// Add event to all nav link
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+
+    for (let j = 0; j < pages.length; j++) {
+      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+        pages[j].classList.add("active");
+        navigationLinks[j].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[j].classList.remove("active");
+        navigationLinks[j].classList.remove("active");
+      }
+    }
+
+  });
+}
+
+// --- THEME TOGGLE FUNCTIONALITY ---
+
+const themeBtn = document.querySelector("[data-theme-btn]");
+const HTML = document.documentElement; // Targets the <html> tag
+
+// Check if user has a saved preference
+const isLight = localStorage.getItem("theme") === "light";
+
+// Apply saved theme on load
+if (isLight) {
+  HTML.setAttribute("data-theme", "light");
+}
+
+themeBtn.addEventListener("click", function () {
+  // Toggle the attribute
+  if (HTML.getAttribute("data-theme") === "light") {
+    HTML.removeAttribute("data-theme");
+    localStorage.setItem("theme", "dark");
+  } else {
+    HTML.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+  }
 });
