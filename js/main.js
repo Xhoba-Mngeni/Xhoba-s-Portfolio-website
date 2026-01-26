@@ -34,10 +34,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// --- THEME TOGGLE FUNCTIONALITY ---
+// The toggle functionality 
 
 const themeBtn = document.querySelector("[data-theme-btn]");
-const HTML = document.documentElement; // Targets the <html> tag
+const HTML = document.documentElement;
 
 // Check if user has a saved preference
 const isLight = localStorage.getItem("theme") === "light";

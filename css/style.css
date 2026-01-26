@@ -1,40 +1,31 @@
-/* --- VARIABLES & THEMES --- */
+/* Variables and themes */
+/* DARK MODE (Default) */
 :root {
-  /* DARK MODE (Default) */
-  --bg-color: #121212;            /* Dark Background */
-  --card-bg: #1e1e1f;             /* Slightly lighter dark card */
-  --text-color: #d6d6d6;          /* Light Grey Text */
-  --title-color: #fafafa;         /* White Titles */
+  --bg-color: #121212; 
+  --card-bg: #1e1e1f;
+  --text-color: #d6d6d6;
+  --title-color: #fafafa;
   
-  /* YOUR NEW DESERT TAN ACCENT */
-  --accent-color: #E2D4A8;        
-  
+  /* DESERT TAN ACCENT */
+  --accent-color: #E2D4A8;
   --border-color: #383838;
   --shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --btn-bg: #2b2b2c;
 }
 
-/* LIGHT MODE (Inverted Logic) */
+/* The light mode which uses inverted logic */
 [data-theme="light"] {
-  /* Background becomes the Desert Tan */
   --bg-color: #E2D4A8;           
-  
-  /* Cards become lighter (Sand/White mix) to stand out against the Tan */
   --card-bg: #F4Ebd9;            
-  
-  /* Text becomes Dark (Primary Dark) */
   --text-color: #333333;         
   --title-color: #121212;
-  
-  /* Accent becomes Dark (like the original background) */
-  --accent-color: #121212;       
-  
+  --accent-color: #121212; 
   --border-color: #c9ba95;
   --shadow: 0 16px 30px hsla(30, 20%, 30%, 0.15);
-  --btn-bg: #d1c29b;             /* Slightly darker tan for buttons */
+  --btn-bg: #d1c29b;
 }
 
-/* --- RESET & BASIC --- */
+/* The reset and basic styles */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -47,7 +38,7 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   padding: 20px;
-  transition: background 0.5s ease, color 0.5s ease; /* Smooth transition */
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
 li { list-style: none; }
@@ -55,7 +46,7 @@ a { text-decoration: none; color: inherit; transition: 0.25s; }
 img { display: block; max-width: 100%; height: auto; }
 button { font: inherit; background: none; border: none; cursor: pointer; }
 
-/* --- LAYOUT --- */
+/* The layout */
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -64,7 +55,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   gap: 25px;
 }
 
-/* --- SIDEBAR --- */
+/* The sidebar */
 .sidebar {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -83,7 +74,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   position: relative; 
 }
 
-/* THEME BUTTON STYLE */
+/* The theme button style*/
 .theme-btn {
   position: absolute;
   top: 0;
@@ -159,7 +150,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 .contact-info .contact-title { font-size: 0.8rem; text-transform: uppercase; color: var(--text-color); opacity: 0.7; }
 .contact-info :is(.contact-link, address) { color: var(--title-color); font-size: 0.9rem; }
 
-/* --- MAIN CONTENT --- */
+/* The main content */
 .main-content {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -171,12 +162,12 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
   transition: 0.5s ease;
 }
 
-/* --- NAVBAR --- */
+/* The navbar */
 .navbar {
   position: absolute;
   top: 0;
   right: 0;
-  background: var(--btn-bg); /* Matches card bg in some themes */
+  background: var(--btn-bg);
   border: 1px solid var(--border-color);
   border-radius: 0 20px 0 20px;
   padding: 10px 20px;
@@ -194,7 +185,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 
 .navbar-link:hover, .navbar-link.active { color: var(--accent-color); }
 
-/* --- PAGE CONTENT --- */
+/* Page content */
 article { display: none; }
 article.active { display: block; animation: fade 0.5s ease; }
 
@@ -208,7 +199,7 @@ article.active { display: block; animation: fade 0.5s ease; }
 .h3 { color: var(--title-color); font-size: 1.5rem; margin-bottom: 20px; }
 p { color: var(--text-color); }
 
-/* --- SERVICES & TIMELINE --- */
+/* Services and timeline */
 .service-list { display: grid; grid-template-columns: 1fr; gap: 20px; }
 .service-item { background: var(--btn-bg); padding: 20px; border-radius: 14px; display: flex; align-items: flex-start; gap: 18px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
 .service-icon-box { color: var(--accent-color); font-size: 40px; }
@@ -221,7 +212,7 @@ p { color: var(--text-color); }
 .timeline-item-title { color: var(--title-color); font-size: 1.1rem; }
 .timeline-text { font-size: 0.95rem; margin-top: 10px; color: var(--text-color); opacity: 0.8; }
 
-/* --- PROJECTS --- */
+/* Projects */
 .project-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
 .project-item > a { width: 100%; display: block; }
 .project-img { position: relative; width: 100%; height: 200px; border-radius: 16px; overflow: hidden; margin-bottom: 15px; }
@@ -230,12 +221,12 @@ p { color: var(--text-color); }
 .project-title { color: var(--title-color); font-size: 1.1rem; margin-bottom: 5px; }
 .project-category { font-size: 0.9rem; color: var(--accent-color); }
 
-/* --- RESPONSIVE --- */
+/* Responsive */
 @media (min-width: 1024px) {
   .main-container { grid-template-columns: 280px 1fr; }
   .sidebar { position: sticky; top: 60px; max-height: max-content; }
   .sidebar-info { flex-direction: column; text-align: center; }
-  .theme-btn { top: 20px; right: 20px; position: absolute;} /* Keep button in corner of sidebar */
+  .theme-btn { top: 20px; right: 20px; position: absolute;} 
   .info_more-btn { display: none; }
   .service-list { grid-template-columns: 1fr 1fr; }
 }
@@ -245,16 +236,16 @@ p { color: var(--text-color); }
   .main-content { margin-bottom: 60px; }
 }
 
-/* --- SOCIAL ICONS STYLING --- */
+/* Social Icons */
 
 .social-list {
-  display: flex;             /* Enables Flexbox */
-  flex-direction: row;       /* Forces horizontal alignment */
-  justify-content: center;   /* Centers items in the container */
+  display: flex;           
+  flex-direction: row;       
+  justify-content: center;  
   align-items: center;
-  gap: 15px;                 /* Space between icons */
+  gap: 15px;             
   padding-bottom: 4px;
-  list-style: none;          /* Removes bullet points */
+  list-style: none;   
 }
 
 .social-item .social-link {
@@ -262,7 +253,7 @@ p { color: var(--text-color); }
   font-size: 20px;
   opacity: 0.7;
   transition: 0.25s ease;
-  display: block;            /* Ensures link takes up space */
+  display: block;    
 }
 
 .social-item .social-link:hover {
